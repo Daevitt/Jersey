@@ -9,11 +9,11 @@ const HomePageComp = () => {
         <div className="flex gap-y-8 flex-col mt-40">
           <div className="text-6xl font-happyMonkey max-w-md"><ReactTypingEffect text={["Did you know?","FUN is a language in itself"]} speed={75} eraseSpeed={50} cursor={'_'}/></div>
           <p className="text-xl font-poppins max-w-lg">
-          Welcome to Ticketing, your ultimate destination for concert tickets! Explore an exciting lineup of upcoming music events, featuring top artists and unforgettable performances across genres..
+          Welcome to Jersey Museum, your ultimate destination for jerseys collections! Explore an exciting lineup of classic jerseys, featuring top teams and unforgettable countries across decades..
           </p>
           <NavLink to = '/Events'>
           <button className="w-[320px] h-[69px] bg-gray-800 text-white text-2xl font-happyMonkey rounded-2xl shadow-lg flex justify-center items-center hover:scale-105 hover:bg-gray-700 transition duration-300 ease-in-out">
-            Browse Events
+            Browse Halls
           </button>
           </NavLink>
         </div>

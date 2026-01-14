@@ -24,7 +24,7 @@ const NavBar = () => {
   return (
     <div className="flex w-full justify-between py-3 items-center">
       <div className="uppercase font-jaini text-5xl">
-        Ticketing
+        Museum Ticketing
       </div>
 
       <div>

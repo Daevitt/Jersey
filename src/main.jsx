@@ -1,18 +1,15 @@
 import { createRoot } from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom'
+import { Toaster } from 'react-hot-toast'
 import App from './App.jsx'
 import './index.css'
-import {BrowserRouter} from 'react-router-dom';
-import { Toaster } from 'react-hot-toast';
-import AppContextProvider from './Context/AppContext.jsx';
-import WalletProvider from './walletProvide.jsx';
-createRoot(document.getElementById('root')).render(
+import AppContextProvider from './Context/AppContext.jsx'
 
-  <WalletProvider>
-    <BrowserRouter>
-      <AppContextProvider>
-        <div><Toaster/></div>
-        <App />
-      </AppContextProvider>
-    </BrowserRouter>
-  </WalletProvider>
+createRoot(document.getElementById('root')).render(
+  <BrowserRouter>
+    <AppContextProvider>
+      <Toaster />
+      <App />
+    </AppContextProvider>
+  </BrowserRouter>
 )

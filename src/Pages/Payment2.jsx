@@ -4,7 +4,7 @@ import { db } from "../firebase";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { collection, getDocs } from "firebase/firestore";
-import sciCut from '../assets/Group 20.svg'
+
 import 'flowbite';
 import { AppContext } from "../Context/AppContext";
 import { NavLink } from "react-router-dom";
@@ -138,7 +138,7 @@ const payment2 = () => {
                         </div>
                 </div>
 
-                <div><img src={sciCut}/></div>
+                <div></div>
 
                 <div>
                     <div className="flex font-ptMono px-2 flex-col justify-center items-center gap-y-3 h-full">

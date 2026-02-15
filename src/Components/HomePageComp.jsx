@@ -1,4 +1,4 @@
-import Taylor from '../assets/Taylor.jpg';
+const Taylor = "https://cdn01.justjared.com/wp-content/uploads/2024/05/new-poster/new-eras-tour-poster.jpg";
 import { NavLink} from 'react-router-dom';
 import ReactTypingEffect from 'react-typing-effect';
 

@@ -4,7 +4,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 // Change this to your WhatsApp number (international format, no + or spaces)
 const WHATSAPP_NUMBER = "1234567890";
 // Optional: pre-filled message the user will see when they open the chat
-const WHATSAPP_MESSAGE = "Hi! I'm interested in an event.";
+const WHATSAPP_MESSAGE = "Hi! I need help on the museum.";
 
 const Chat = () => {
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;

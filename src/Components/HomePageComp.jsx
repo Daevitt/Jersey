@@ -1,4 +1,4 @@
-import Taylor from '../assets/Taylor.jpg';
+const Taylor = "https://www.clubjerseys.cl/wp-content/uploads/2026/01/vitrina5_chica.jpg";
 import { NavLink} from 'react-router-dom';
 import ReactTypingEffect from 'react-typing-effect';
 
@@ -7,7 +7,7 @@ const HomePageComp = () => {
 
       <div className="text-white flex w-10/12 justify-between px-16">
         <div className="flex gap-y-8 flex-col mt-40">
-          <div className="text-6xl font-happyMonkey max-w-md"><ReactTypingEffect text={["Did you know?","FUN is a language in itself"]} speed={75} eraseSpeed={50} cursor={'_'}/></div>
+          <div className="text-6xl font-happyMonkey max-w-md"><ReactTypingEffect text={["World Champs","Leyends of football"]} speed={75} eraseSpeed={50} cursor={'_'}/></div>
           <p className="text-xl font-poppins max-w-lg">
           Welcome to Jersey Museum, your ultimate destination for jerseys collections! Explore an exciting lineup of classic jerseys, featuring top teams and unforgettable countries across decades..
           </p>

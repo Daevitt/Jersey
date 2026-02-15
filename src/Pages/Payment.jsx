@@ -4,7 +4,7 @@ import { db } from "../firebase";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { collection, getDocs } from "firebase/firestore";
-import Taylor from '../assets/Taylor.jpg';
+
 import 'flowbite';
 import { AppContext } from "../Context/AppContext";
 import { NavLink } from "react-router-dom";

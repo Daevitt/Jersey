@@ -5,7 +5,7 @@ import { db } from "../firebase"
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 // import Loader from "../Components/Loader";
 import Temp from "./temp";
-import sciCut from '../assets/Group 20.svg'
+
 import { collection, getDocs } from "firebase/firestore";
 import Counter from "../Components/Counter";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
@@ -139,7 +139,7 @@ const BillingPage2 = () => {
           </div>
         </div>
 
-        <div><img src={sciCut} /></div>
+        <div></div>
 
         <div>
           <div className="flex font-ptMono px-2 flex-col justify-center items-center gap-y-3 h-full">

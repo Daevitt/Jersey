@@ -1,33 +1,9 @@
 import MainSlider from "../Components/MainSlider";
-import { useEffect, useState } from "react";
 import UpcomingSlider from "../Components/UpcomingSlider";
-import Loader from "../Components/Loader";
 import Chat from "../Components/Chat";
+import { data } from "../../data";
 
 const Events = () => {
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    // UI ONLY: datos mock para evitar Firebase
-    setLoading(true);
-
-    const mockEvents = [];
-
-    setTimeout(() => {
-      setData(mockEvents);
-      setLoading(false);
-    }, 300);
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="w-screen h-screen bg-black flex justify-center items-center">
-        <Loader />
-      </div>
-    );
-  }
-
   return (
     <div className="bg-black w-screen relative h-screen overflow-x-hidden">
       <MainSlider data={data} />

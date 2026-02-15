@@ -1,34 +1,23 @@
 import EventElement from "../Components/EventElement";
-import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
-import Loader from "../Components/Loader";
+import { useParams, useNavigate } from "react-router-dom";
 import Chat from "../Components/Chat";
+import { data } from "../../data";
 
 const Event = () => {
   const { id } = useParams();
-  const [item, setItem] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
+  const item = data.find((event) => event.id === id);
 
-  useEffect(() => {
-    // UI ONLY: evento mock
-    setLoading(true);
-
-    const mockEvent = {
-      id,
-      title: "Demo Event",
-      description: "UI-only mode",
-    };
-
-    setTimeout(() => {
-      setItem(mockEvent);
-      setLoading(false);
-    }, 300);
-  }, [id]);
-
-  if (loading) {
+  if (!item) {
     return (
-      <div className="w-screen h-screen bg-black flex justify-center items-center">
-        <Loader />
+      <div className="w-screen h-screen bg-black flex flex-col justify-center items-center text-white gap-4">
+        <div className="text-2xl">Event not found</div>
+        <button
+          className="bg-[#FF9011] px-6 py-2 rounded-md text-black font-semibold"
+          onClick={() => navigate("/Events")}
+        >
+          Back to Events
+        </button>
       </div>
     );
   }

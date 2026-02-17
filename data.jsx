@@ -1,53 +1,53 @@
 export const data = [
     {
         "id" : "1",
-        "EventName" : "Sala 1 Nombre",
+        "EventName" : "Icons Room",
         "Description" : "Esta es la descripcion de la sala 1, que puede ser un texto largo, para destacar todas las caracteristicas incluidas.",
         "Image" : "https://www.clubjerseys.cl/wp-content/uploads/2023/07/cap_foto.jpg",
         "Artist" : "Participantes 1",
         "Venue" : "ubicacion 1",
         "Date" : "05/09/2001",
-        "Price" : "0.5 ETH"
+        "Price" : "5000 JERSEYS"
     },
     {
         "id" : "2",
-        "EventName" : "Sala 2 Nombre",
+        "EventName" : "Legends Room",
         "Description" : "Esta es la descripcion de la sala 2, que puede ser un texto largo, para destacar todas las caracteristicas incluidas.",
         "Image" : "https://www.clubjerseys.cl/wp-content/uploads/2023/07/cap_foto.jpg",
         "Artist" : "Participantes 2",
         "Venue" : "Ubicacion 2",
         "Date" : "05/09/2002",
-        "Price" : "0.5 ETH"
+        "Price" : "5000 JERSEYS"
     },
     {
         "id" : "3",
-        "EventName" : "Sala 3 Nombre",
+        "EventName" : "World Champions Room",
         "Description" : "Esta es la descripcion de la sala 3, que puede ser un texto largo, para destacar todas las caracteristicas incluidas.",
         "Image" : "https://www.clubjerseys.cl/wp-content/uploads/2023/07/cap_foto.jpg",
         "Artist" : "Participantes 3",
         "Venue" : "Ubicacion 3",
         "Date" : "05/09/2003",
-        "Price" : "0.5 ETH"
+        "Price" : "5000 JERSEYS"
     },
     {
         "id" : "4",
-        "EventName" : "Sala 4 Nombre",
+        "EventName" : "Italy Legends Room",
         "Description" : "Esta es la descripcion de la sala 4, que puede ser un texto largo, para destacar todas las caracteristicas incluidas.",
         "Image" : "https://www.clubjerseys.cl/wp-content/uploads/2023/07/cap_foto.jpg",
         "Artist" : "Participantes 4",
         "Venue" : "Ubicaciones 4",
         "Date" : "05/09/2004",
-        "Price" : "0.5 ETH"
+        "Price" : "5000 JERSEYS"
     },
     {
         "id" : "5",
-        "EventName" : "Sala 5 Nombre",
+        "EventName" : "Chilean Legends",
         "Description" : "Esta es la descripcion de la sala 5, que puede ser un texto largo, para destacar todas las caracteristicas incluidas.",
         "Image" : "https://www.clubjerseys.cl/wp-content/uploads/2023/07/cap_foto.jpg",
         "Artist" : "Participantes 5",
         "Venue" : "Ubicacion 5",
         "Date" : "05/09/2005",
-        "Price" : "0.5 ETH"
+        "Price" : "5000 JERSEYS"
     }
 ]
 

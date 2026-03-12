@@ -6,12 +6,12 @@ export const data = [
     Description:
       "Esta es la descripcion de la sala 1, que puede ser un texto largo, para destacar todas las caracteristicas incluidas.",
     Image:
-      "https://www.clubjerseys.cl/wp-content/uploads/2023/07/cap_foto.jpg",
+      "https://i.postimg.cc/pdzy5QYP/camiseta-DEMO1.png",
     // Demo: misma imagen para baja y alta. Luego puedes cambiarlas.
     lowResImage:
-      "https://www.clubjerseys.cl/wp-content/uploads/2023/07/cap_foto.jpg",
+      "https://i.postimg.cc/RC6CWLS6/camiseta-SD1.png",
     highResImages: [
-      "https://www.clubjerseys.cl/wp-content/uploads/2023/07/cap_foto.jpg",
+      "https://i.postimg.cc/3RPTXz8y/camiseta-HD1.png",
     ],
     Artist: "Participantes 1",
     Venue: "ubicacion 1",
@@ -25,11 +25,11 @@ export const data = [
     Description:
       "Esta es la descripcion de la sala 2, que puede ser un texto largo, para destacar todas las caracteristicas incluidas.",
     Image:
-      "https://www.clubjerseys.cl/wp-content/uploads/2023/07/cap_foto.jpg",
+      "https://i.postimg.cc/pdzy5QYP/camiseta-DEMO1.png",
     lowResImage:
-      "https://www.clubjerseys.cl/wp-content/uploads/2023/07/cap_foto.jpg",
+      "https://i.postimg.cc/RC6CWLS6/camiseta-SD1.png",
     highResImages: [
-      "https://www.clubjerseys.cl/wp-content/uploads/2023/07/cap_foto.jpg",
+      "https://i.postimg.cc/Qxg376vy/brasil1.png",
     ],
     Artist: "Participantes 2",
     Venue: "Ubicacion 2",
@@ -43,11 +43,11 @@ export const data = [
     Description:
       "Esta es la descripcion de la sala 3, que puede ser un texto largo, para destacar todas las caracteristicas incluidas.",
     Image:
-      "https://www.clubjerseys.cl/wp-content/uploads/2023/07/cap_foto.jpg",
+      "https://i.postimg.cc/pdzy5QYP/camiseta-DEMO1.png",
     lowResImage:
-      "https://www.clubjerseys.cl/wp-content/uploads/2023/07/cap_foto.jpg",
+      "https://i.postimg.cc/RC6CWLS6/camiseta-SD1.png",
     highResImages: [
-      "https://www.clubjerseys.cl/wp-content/uploads/2023/07/cap_foto.jpg",
+      "https://i.postimg.cc/Qxg376vy/brasil1.png",
     ],
     Artist: "Participantes 3",
     Venue: "Ubicacion 3",
@@ -61,11 +61,11 @@ export const data = [
     Description:
       "Esta es la descripcion de la sala 4, que puede ser un texto largo, para destacar todas las caracteristicas incluidas.",
     Image:
-      "https://www.clubjerseys.cl/wp-content/uploads/2023/07/cap_foto.jpg",
+      "https://i.postimg.cc/pdzy5QYP/camiseta-DEMO1.png",
     lowResImage:
-      "https://www.clubjerseys.cl/wp-content/uploads/2023/07/cap_foto.jpg",
+      "https://i.postimg.cc/RC6CWLS6/camiseta-SD1.png",
     highResImages: [
-      "https://www.clubjerseys.cl/wp-content/uploads/2023/07/cap_foto.jpg",
+      "https://i.postimg.cc/Qxg376vy/brasil1.png",
     ],
     Artist: "Participantes 4",
     Venue: "Ubicaciones 4",
@@ -79,11 +79,11 @@ export const data = [
     Description:
       "Esta es la descripcion de la sala 5, que puede ser un texto largo, para destacar todas las caracteristicas incluidas.",
     Image:
-      "https://www.clubjerseys.cl/wp-content/uploads/2023/07/cap_foto.jpg",
+      "https://i.postimg.cc/pdzy5QYP/camiseta-DEMO1.png",
     lowResImage:
-      "https://www.clubjerseys.cl/wp-content/uploads/2023/07/cap_foto.jpg",
+      "https://i.postimg.cc/RC6CWLS6/camiseta-SD1.png",
     highResImages: [
-      "https://www.clubjerseys.cl/wp-content/uploads/2023/07/cap_foto.jpg",
+      "https://i.postimg.cc/Qxg376vy/brasil1.png",
     ],
     Artist: "Participantes 5",
     Venue: "Ubicacion 5",

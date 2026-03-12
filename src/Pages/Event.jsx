@@ -1,16 +1,16 @@
-import { useContext } from "react"
-import EventElement from "../Components/EventElement"
-import { useParams, useNavigate } from "react-router-dom"
-import Chat from "../Components/Chat"
-import { data } from "../../data"
-import { AppContext } from "../Context/AppContext"
+import { useContext } from "react";
+import EventElement from "../Components/EventElement";
+import { useParams, useNavigate } from "react-router-dom";
+import Chat from "../Components/Chat";
+import { data } from "../../data";
+import { AppContext } from "../Context/AppContext";
 
 const Event = () => {
-  const { id } = useParams()
-  const navigate = useNavigate()
-  const { isWalletConnected, isRoomOwned, markRoomAsOwned } = useContext(AppContext)
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const { isWalletConnected, isRoomOwned, markRoomAsOwned } = useContext(AppContext);
 
-  const item = data.find((event) => event.id === id)
+  const item = data.find((event) => event.id === id);
 
   if (!item) {
     return (
@@ -23,24 +23,29 @@ const Event = () => {
           Back to Events
         </button>
       </div>
-    )
+    );
   }
 
-  const roomId = item.roomId || item.id
-  const owned = isRoomOwned(roomId)
+  const roomId = item.roomId || item.id;
+  const owned = isRoomOwned(roomId);
 
-  let accessLevel = "no_wallet"
+  let accessLevel = "no_wallet";
   if (isWalletConnected && !owned) {
-    accessLevel = "wallet_no_nft"
+    accessLevel = "wallet_no_nft";
   }
   if (isWalletConnected && owned) {
-    accessLevel = "wallet_has_nft"
+    accessLevel = "wallet_has_nft";
   }
 
   const handleDemoBuy = () => {
-    // En la demo, marcar la sala como "comprada"
-    markRoomAsOwned(roomId)
-  }
+    if (!isWalletConnected) {
+      alert("Conecta tu wallet para comprar el acceso a esta sala.");
+      return;
+    }
+
+    // En la demo, marcar la sala como "comprada" solo a nivel local
+    markRoomAsOwned(roomId);
+  };
 
   return (
     <div>
@@ -56,7 +61,7 @@ const Event = () => {
         <Chat />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Event
+export default Event;

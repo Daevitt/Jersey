@@ -1,12 +1,16 @@
-import EventElement from "../Components/EventElement";
-import { useParams, useNavigate } from "react-router-dom";
-import Chat from "../Components/Chat";
-import { data } from "../../data";
+import { useContext } from "react"
+import EventElement from "../Components/EventElement"
+import { useParams, useNavigate } from "react-router-dom"
+import Chat from "../Components/Chat"
+import { data } from "../../data"
+import { AppContext } from "../Context/AppContext"
 
 const Event = () => {
-  const { id } = useParams();
-  const navigate = useNavigate();
-  const item = data.find((event) => event.id === id);
+  const { id } = useParams()
+  const navigate = useNavigate()
+  const { isWalletConnected, isRoomOwned, markRoomAsOwned } = useContext(AppContext)
+
+  const item = data.find((event) => event.id === id)
 
   if (!item) {
     return (
@@ -19,19 +23,40 @@ const Event = () => {
           Back to Events
         </button>
       </div>
-    );
+    )
+  }
+
+  const roomId = item.roomId || item.id
+  const owned = isRoomOwned(roomId)
+
+  let accessLevel = "no_wallet"
+  if (isWalletConnected && !owned) {
+    accessLevel = "wallet_no_nft"
+  }
+  if (isWalletConnected && owned) {
+    accessLevel = "wallet_has_nft"
+  }
+
+  const handleDemoBuy = () => {
+    // En la demo, marcar la sala como "comprada"
+    markRoomAsOwned(roomId)
   }
 
   return (
     <div>
       <div className="bg-black w-screen h-screen overflow-hidden">
-        <EventElement item={item} />
+        <EventElement
+          item={item}
+          accessLevel={accessLevel}
+          isOwned={owned}
+          onDemoBuy={handleDemoBuy}
+        />
       </div>
       <div className="fixed bottom-3 right-6">
         <Chat />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Event;
+export default Event

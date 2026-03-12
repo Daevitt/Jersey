@@ -3,8 +3,6 @@ import { Routes, Route } from 'react-router-dom'
 import Homepage from './Pages/Homepage'
 import Home from './Pages/Home'
 import Events from './Pages/Events'
-import SignUp from './Pages/SignUp'
-import Login from './Pages/Login'
 import NotFound from './Pages/NotFound'
 import Event from './Pages/Event'
 import Payment2 from './Pages/Payment2'
@@ -19,8 +17,6 @@ function App() {
         <Route path="/" element={<Homepage />}>
           <Route index element={<Home />} />
           <Route path="Events" element={<Events />} />
-          <Route path="Signup" element={<SignUp />} />
-          <Route path="Login" element={<Login />} />
           <Route path="CreateEvent" element={<CreateEvent />} />
           <Route path="Billing/:id" element={<BillingPage2 />} />
           <Route path="Event/:id" element={<Event />} />

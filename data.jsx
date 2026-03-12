@@ -6,10 +6,10 @@ export const data = [
     Description:
       "Esta es la descripcion de la sala 1, que puede ser un texto largo, para destacar todas las caracteristicas incluidas.",
     Image:
-      "https://i.postimg.cc/7ZYdCJbd/brasil-DEMO.png",
+      "https://i.postimg.cc/2y9v2tFQ/brasil-DEMO.png",
     // Demo: misma imagen para baja y alta. Luego puedes cambiarlas.
     lowResImage:
-      "https://i.postimg.cc/Hx7fYGjV/brasil-SD.png",
+      "https://i.postimg.cc/g0bhS8Rx/brasil-SD.png",
     highResImages: [
       "https://i.postimg.cc/3RPTXz8y/camiseta-HD1.png",
     ],
